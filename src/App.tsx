@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path='/homepage/Home' element={<Home />} />
+        <Route path='/homepage/home' element={<Home />} />
         <Route path='/react' element={<ReactApp />} />
       </Routes>
     </div>
