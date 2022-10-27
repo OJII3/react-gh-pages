@@ -1,23 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+// Use HashRouter instead of BrowserRouter so that root path will be the repo-name
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='/' element={<App />} />
-      </Routes>
-    </BrowserRouter>
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 
