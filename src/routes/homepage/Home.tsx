@@ -4,9 +4,8 @@ import NavbarElement from "./NavbarElement";
 const Home = () => {
   return (
     <>
-      <div>
-        <NavbarElement />
-      </div>
+      <NavbarElement />
+
       <div className="home">Welcome Home</div>
     </>
   );
