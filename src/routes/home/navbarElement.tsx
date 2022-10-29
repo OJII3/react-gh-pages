@@ -21,7 +21,9 @@ const NavbarElement = () => {
   return (
     <Navbar key={expand || 'false'} bg="light" expand={expand} className="mb-3">
       <Container fluid>
-        <Navbar.Brand href="/homepage/home">OJII3</Navbar.Brand>
+        <LinkContainer to='/home'>
+          <Navbar.Brand>OJII3</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-sm`}
@@ -35,17 +37,20 @@ const NavbarElement = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <LinkContainer to='/homepage/home'>
+              <LinkContainer to='/home'>
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/react">
                 <Nav.Link>ReactTemplate</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/home/tetris">
+                <Nav.Link>Tetris</Nav.Link>
+              </LinkContainer>
               <NavDropdown
-                title="Dropdown"
+                title="Info"
                 id={`offcanvasNavbarDropdown-expand-${expand}`}
               >
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="https://github.com/OJII3">GitHub</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
                   Another action
                 </NavDropdown.Item>

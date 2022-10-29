@@ -1,0 +1,5 @@
+.bg-img-abstract {
+  height: 200px;
+	background: url(../media/abstract-background-of-four-colored-triangles.jpg) no-repeat;
+	background-size: contain;
+}
