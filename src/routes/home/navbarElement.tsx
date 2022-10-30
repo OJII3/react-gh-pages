@@ -13,6 +13,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from "react-router-dom";
 
 // ほぼコピペ from
 // https://react-bootstrap.github.io/components/navbar/
@@ -60,14 +61,15 @@ const NavbarElement = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Form className="d-flex">
+            <Form className="d-flex" action={`${document.URL.replace(/\/react-gh-pages#\/.*$/, '')}/react-gh-pages#/home/search`}>
               <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
+                name='q'
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success" type="submit">Search</Button>
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
