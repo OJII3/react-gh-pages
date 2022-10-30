@@ -3,6 +3,7 @@ import logo from './img/logo.svg';
 import './style/ReactApp.css';
 
 const App = () => {
+  document.title = 'React App';
   return (
     <div className="App">
       <header className="App-header">
