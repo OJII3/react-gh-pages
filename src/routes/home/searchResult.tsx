@@ -1,0 +1,10 @@
+import NavbarElement from "./navbarElement";
+
+const SearchResult = () => {
+  return (
+    <>
+    </>
+  );
+};
+
+export default SearchResult;

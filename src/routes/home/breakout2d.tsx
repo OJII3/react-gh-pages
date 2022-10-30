@@ -38,7 +38,7 @@ const Breakout2d = () => {
                 <Card.Body>
                   <Card.Title>Breakout2D 2021.5</Card.Title>
                   <Card.Text>
-                    Google Apps Scriptで動いています。
+                    Google Apps Scriptで動いています。キーボード操作がタッチ操作に代わり、ブロックが一回では壊れなくなりました。
                   </Card.Text>
                   <Button variant="primary" href='https://script.google.com/macros/s/AKfycbwhYmfDdeKwVQSjXGXyv58aRqDb7WpN-xyeWXWNZdjd3vBsRn5F6ZgzpMgew1X140Qy7g/exec'>
                     開く

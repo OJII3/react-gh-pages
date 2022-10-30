@@ -21,7 +21,7 @@ const Headline = () => (
   </header>
 );
 
-const tetris = () => {
+const Tetris = () => {
   document.title = 'Tetris Ish - OJII3';
   return (
     <>
@@ -73,4 +73,4 @@ const tetris = () => {
   );
 };
 
-export default tetris;
+export default Tetris;

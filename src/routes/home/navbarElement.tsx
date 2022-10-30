@@ -43,7 +43,7 @@ const NavbarElement = () => {
               <LinkContainer to="/react">
                 <Nav.Link>ReactTemplate</Nav.Link>
               </LinkContainer>
-              <NavDropdown title='Product' id={`offcanvasNavbarDropdown-expand-${expand}`}>
+              <NavDropdown title='Works' id={`offcanvasNavbarDropdown-expand-${expand}`}>
                 <LinkContainer to='/home/tetris'>
                   <NavDropdown.Item >Tetris</NavDropdown.Item>
                 </LinkContainer>
@@ -51,7 +51,7 @@ const NavbarElement = () => {
                   <NavDropdown.Item>Breakout2D</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
-              <NavDropdown title="Info" id={`offcanvasNavbarDropdown-expand-${expand}`}>
+              <NavDropdown title="Others" id={`offcanvasNavbarDropdown-expand-${expand}`}>
                 <NavDropdown.Item href="https://github.com/OJII3">GitHub</NavDropdown.Item>
                 <NavDropdown.Item href="https://qiita.com/OJII3">Qiita</NavDropdown.Item>
                 <NavDropdown.Divider />
