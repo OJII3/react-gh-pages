@@ -61,7 +61,7 @@ const NavbarElement = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Form className="d-flex" action={`${document.URL.replace(/\/react-gh-pages#\/.*$/, '')}/react-gh-pages#/home/search`}>
+            <Form className="d-flex">
               <Form.Control
                 type="search"
                 placeholder="Search"
@@ -69,7 +69,9 @@ const NavbarElement = () => {
                 aria-label="Search"
                 name='q'
               />
-              <Button variant="outline-success" type="submit">Search</Button>
+              <LinkContainer to='/home/search'>
+                <Button variant="outline-success">Search</Button>
+              </LinkContainer>
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
