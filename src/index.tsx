@@ -9,9 +9,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-// Use HashRouter instead of BrowserRouter so that root path will be the repo-name
 root.render(
   <React.StrictMode>
+    {/* Use HashRouter instead of BrowserRouter so that root path will be the repo-name */}
     <HashRouter>
       <App />
     </HashRouter>

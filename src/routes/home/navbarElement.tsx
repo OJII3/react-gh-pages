@@ -13,7 +13,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import { LinkContainer } from 'react-router-bootstrap';
-import { Link } from "react-router-dom";
 
 // ほぼコピペ from
 // https://react-bootstrap.github.io/components/navbar/
@@ -69,7 +68,7 @@ const NavbarElement = () => {
                 aria-label="Search"
                 name='q'
               />
-              <LinkContainer to='/home/search'>
+              <LinkContainer to={`/home/search?${FormData}`}>
                 <Button variant="outline-success">Search</Button>
               </LinkContainer>
             </Form>

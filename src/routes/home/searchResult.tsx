@@ -8,7 +8,7 @@ import NavbarElement from "./navbarElement";
 const SearchResult = () => {
   document.title = 'Search Pages - OJII3';
   const rawParameter = useLocation().search;
-  const searchQuery = new URLSearchParams(rawParameter).get('q') ?? 'nulldadgadfa';
+  const searchQuery = new URLSearchParams(rawParameter).get('q') ?? 'there is no parameter';
   let pathes: JSX.Element[] = [];
   let [results, setResults] = React.useState<JSX.Element[]>(pathes);
 
@@ -18,7 +18,7 @@ const SearchResult = () => {
         pathes.push(
           <Row classNmae='justify-content-md-center'>
             <Col lg={8}>
-              <li><Link to={target.path}>{`Path: ${process.env.URL} ${target.path}`}</Link></li>
+              <li><Link to={target.path}>{`Path: ${target.path}`}</Link></li>
             </Col>
           </Row>
         );

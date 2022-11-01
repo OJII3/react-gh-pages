@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/home';
 import Error404 from './routes/home/404';
@@ -9,10 +8,10 @@ const App = () => {
   return (
     <div>
       <Routes>
-        {Pages.map(x => <Route path={x.path} element={x.content()} />)}
         <Route path='/' element={<Home />} />
         <Route path='/home/search' element={<SearchResult />} />
         <Route path='*' element={<Error404 />} />
+        {Pages.map(x => <Route path={x.path} element={x.content()} />).concat()}
       </Routes>
     </div>
   );
